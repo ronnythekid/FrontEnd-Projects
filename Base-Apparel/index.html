@@ -26,7 +26,7 @@
     </div>
     <!-- Image  -->
     <!-- Another solution would be to use a div and add an image through a css property -->
-    <img src="/images/hero-mobile.jpg" alt="Girl looking" />
+    <img class="hero-img" src="/images/hero-mobile.jpg" alt="Girl looking" />
     <!-- Body container -->
     <div class="container">
       <!-- Title -->
@@ -37,17 +37,25 @@
         launch deals.
       </p>
       <!--  Subscribe through email address -->
-      <input type="email" name="email" id="subs" placeholder="Email Address" />
-      <input type="submit" value=">" />
+      <div class="container-subs">
+        <input
+          type="email"
+          name="email"
+          id="subs"
+          placeholder="Email Address"
+        />
+        <input class="subs-btn" type="submit" value=">" />
+        <img class="arrow-img" src="/images/icon-arrow.svg" alt="Arrow icon" />
+      </div>
     </div>
 
-    <footer>
+    <!-- <footer>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
         >. Coded by <a href="#">Ronny Y.</a>.
       </p>
-    </footer>
+    </footer> -->
   </body>
 </html>
