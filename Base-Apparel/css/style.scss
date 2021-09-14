@@ -12,17 +12,9 @@ $primary-soft-red: hsl(0, 93%, 68%);
 $primary-dark-grayish-red: hsl(0, 6%, 24%);
 
 // Gradients
-$gradient-first: linear-gradient(
-  135deg,
-  from hsl(0, 0%, 100%),
-  to hsl(0, 100%, 98%)
-);
+$gradient-first: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 
-$gradient-second: linear-gradient(
-  135deg,
-  from hsl(0, 80%, 86%),
-  to hsl(0, 74%, 74%)
-);
+$gradient-second: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 // $gradient-first: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
 // $gradient-second: Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
 
@@ -39,7 +31,7 @@ $primary-font: 'Josefin Sans', sans-serif;
 }
 
 body {
-  background-image: $gradient-second;
+  background: $gradient-first;
 }
 
 // Nav section
@@ -53,6 +45,10 @@ body {
 }
 
 // Image section
+.hero-img {
+  display: block;
+  width: 100%;
+}
 // Body section
 .container {
   padding: 4em 1.8em;
@@ -81,4 +77,47 @@ body {
   padding: 1.5em 0;
   font-size: 15px;
   color: $primary-desaturated-red;
+  line-height: 1.6em;
+}
+
+// Subscribe button
+.container-subs {
+  width: 100%;
+  margin-top: 0.8em;
+  position: relative;
+}
+
+#subs {
+  // margin-top: 0.7em;
+  // margin-left: 0.5em;
+  padding: 1em 1.5em;
+  position: absolute;
+  width: 90%;
+  left: 0;
+  border-radius: 50px;
+  border: 1px solid $primary-desaturated-red;
+  background: $gradient-first;
+  outline: none;
+}
+
+::placeholder {
+  color: $primary-desaturated-red;
+  font-size: 0.9em;
+}
+
+.subs-btn {
+  padding: 1.1em 1.8em;
+  border-radius: 50px;
+  position: absolute;
+  right: 0;
+  top: -2px;
+  background: $gradient-second;
+  color: transparent;
+  border: 1px solid transparent;
+}
+
+.arrow-img {
+  position: absolute;
+  right: 28px;
+  top: 15px;
 }

@@ -9,7 +9,7 @@
 }
 
 body {
-  background-image: linear-gradient(135deg, from #f8bfbf, to #ee8c8c);
+  background: linear-gradient(135deg, white, #fff5f5);
 }
 
 .navbar {
@@ -18,6 +18,11 @@ body {
 
 .navbar a img {
   width: 6em;
+}
+
+.hero-img {
+  display: block;
+  width: 100%;
 }
 
 .container {
@@ -43,5 +48,60 @@ body {
   padding: 1.5em 0;
   font-size: 15px;
   color: #ce9797;
+  line-height: 1.6em;
+}
+
+.container-subs {
+  width: 100%;
+  margin-top: 0.8em;
+  position: relative;
+}
+
+#subs {
+  padding: 1em 1.5em;
+  position: absolute;
+  width: 90%;
+  left: 0;
+  border-radius: 50px;
+  border: 1px solid #ce9797;
+  background: linear-gradient(135deg, white, #fff5f5);
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: #ce9797;
+  font-size: 0.9em;
+}
+
+:-ms-input-placeholder {
+  color: #ce9797;
+  font-size: 0.9em;
+}
+
+::-ms-input-placeholder {
+  color: #ce9797;
+  font-size: 0.9em;
+}
+
+::placeholder {
+  color: #ce9797;
+  font-size: 0.9em;
+}
+
+.subs-btn {
+  padding: 1.1em 1.8em;
+  border-radius: 50px;
+  position: absolute;
+  right: 0;
+  top: -2px;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  color: transparent;
+  border: 1px solid transparent;
+}
+
+.arrow-img {
+  position: absolute;
+  right: 28px;
+  top: 15px;
 }
 /*# sourceMappingURL=style.css.map */
