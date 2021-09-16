@@ -18,44 +18,23 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <!-- logo  -->
-    <div class="navbar">
-      <a class="logo" href="#"
-        ><img src="/images/logo.svg" alt="Logo Base Apparel" />
-      </a>
-    </div>
-    <!-- Image  -->
-    <!-- Another solution would be to use a div and add an image through a css property -->
-    <img class="hero-img" src="/images/hero-mobile.jpg" alt="Girl looking" />
-    <!-- Body container -->
     <div class="container">
-      <!-- Title -->
-      <h1 class="title"><span>We're</span> coming soon</h1>
-      <p class="description">
-        Hello fellow shoppers! We're currently building our new fashion store.
-        Add your email below to stay up-to-date with announcements and our
-        launch deals.
-      </p>
-      <!--  Subscribe through email address -->
-      <div class="container-subs">
-        <input
-          type="email"
-          name="email"
-          id="subs"
-          placeholder="Email Address"
-        />
-        <input class="subs-btn" type="submit" value=">" />
-        <img class="arrow-img" src="/images/icon-arrow.svg" alt="Arrow icon" />
+      <div class="left">
+        <img class="logo" src="/images/logo.svg" alt="logo" />
+        <h1><span>we're</span> coming soon</h1>
+        <p class="description">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form action="#">
+          <input type="email" placeholder="Email Address" />
+          <img class="error-icon" src="/images/icon-error.svg" alt="error" />
+          <button><img src="/images/icon-arrow.svg" alt="arrow" /></button>
+          <small>Pleace provide a valid email</small>
+        </form>
       </div>
+      <div class="right bg-image"></div>
     </div>
-
-    <!-- <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Ronny Y.</a>.
-      </p>
-    </footer> -->
   </body>
 </html>
